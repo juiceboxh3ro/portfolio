@@ -1,14 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    pageTransition: {
-      name: 'fade',
-      mode: 'out-in',
-    },
-    layoutTransition: {
-      name: 'slide',
-      mode: 'out-in',
-    },
+    pageTransition: { name: 'slide-right', mode: 'out-in', },
+    layoutTransition: { name: 'page', mode: 'out-in', },
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width, initial-scale=1',

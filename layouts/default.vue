@@ -1,6 +1,5 @@
 <template>
-  <div class="w-screen h-screen p-4 text-white">
-    <Navbar />
+  <main class="h-full">
     <slot />
-  </div>
+  </main>
 </template>
