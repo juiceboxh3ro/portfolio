@@ -15,7 +15,7 @@
       <div class="h-full flex flex-1 flex-col justify-center gap-4 text-lg">
         <p>Hello, I'm</p>
         <div>
-          <h3 class="text-6xl">Jesse Goodburne.</h3>
+          <h3 class="text-6xl">jesse goodburne.</h3>
           <h3 class="text-4xl">I create internet things.</h3>
         </div>
         <p>I'm a web developer based near Washington D.C., USA. I'm passionate about creating beautiful websites and challenging my skillset to create better web-based experiences.</p>
