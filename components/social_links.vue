@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="absolute left-8 bottom-8 h-auto w-6">
+  <div class="fixed left-8 bottom-8 h-auto w-6">
     <div class="mb-2">
       <a href="https://github.com/juiceboxh3ro" target="_blank" rel="noreferrer noopener">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
