@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: 'Poppins-Light';
-  src: url('/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  src: url('/fonts/poppins/Poppins-Light.ttf') format('truetype');
   font-weight: 200;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
+  src: url('/fonts/poppins/Poppins-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
@@ -26,6 +26,11 @@
   font-weight: 800;
 }
 
+@font-face {
+  font-family: 'Kosugi';
+  src: url('/fonts/kosugi_maru/Kosugi-Regular.ttf') format('truetype');
+}
+
 html {
   background: #18181b;
 }
@@ -37,10 +42,7 @@ html, body {
   color: #cbd5e1;
 }
 
-body {
-  height: calc(100vh - 64px);
-}
-
-#__nuxt {
-  height: 100%;
+::selection {
+  background: #bbf7d0;
+  color: #18181b;
 }
