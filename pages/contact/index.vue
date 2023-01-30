@@ -3,6 +3,10 @@
     title: "Jesse Goodburne | Contact",
     ogTitle: "Jesse Goodburne | Contact",
   })
+
+  const handleSubmit = (e: Event) => {
+    e.preventDefault()
+  }
 </script>
 
 <template>
@@ -16,9 +20,10 @@
         <p>You can also email me directly at <a href="mailto:jessegoodburne@gmail.com" class="text-green-400">jessegoodburne@gmail.com</a></p>
       </div>
       <form
+        @submit="handleSubmit"
         class="w-full md:w-1/2"
         name="contact"
-        netlify
+        data-netlify="true"
       >
         <fieldset class="border-2 border-green-400 p-4 rounded-lg">
           <div class="pt-2 flex flex-col items-end">
