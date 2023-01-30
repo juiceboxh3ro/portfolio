@@ -71,7 +71,7 @@
         <div>
           <button
             @click="viewing = 'projects'"
-            class="text-2xl font-bold text-white bg-green-400 px-4 py-2 my-12 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 focus:outline-green-300"
+            class="text-2xl font-bold text-zinc-900 bg-green-400 px-4 py-2 my-12 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 focus:outline-green-300"
           >
             View Projects
           </button>
@@ -102,7 +102,7 @@
         <div>
           <button
             @click="viewing = 'work'"
-            class="text-2xl font-bold text-white bg-green-400 px-4 py-2 my-12 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 focus:outline-green-300"
+            class="text-2xl font-bold text-zinc-900 bg-green-400 px-4 py-2 my-12 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 focus:outline-green-300"
           >
             View Work Experience
           </button>

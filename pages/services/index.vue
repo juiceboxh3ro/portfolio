@@ -23,20 +23,10 @@
             <h3 class="text-2xl font-bold">What I Will Do</h3>
             <ul>
               <li>
-                <GreenTriangle />&nbsp;Website/Web App development:
-                <ul class="inner-list ml-7">
-                  <li>Javascript (React/Next, Vue/Nuxt, Sveltekit)</li>
-                  <li>Django</li>
-                  <li>Ruby on Rails</li>
-                  <li>Phoenix</li>
-                  <li>Database with Postgres, MongoDB, or Firebase</li>
-                </ul>
-                <GreenTriangle />&nbsp;Static Site/Site builders:
-                <ul class="inner-list ml-7">
-                  <li>Hugo</li>
-                  <li>Squarespace</li>
-                  <li>Wix</li>
-                </ul>
+                <GreenTriangle />&nbsp;Website/Web App development using HTML, CSS, (Javascript/Django/Rails/Phoenix)
+              </li>
+              <li>
+                <GreenTriangle />&nbsp;Website from Static Site/Site builders
               </li>
               <li><GreenTriangle />&nbsp;Design for desktop and mobile browsers from references, wireframe, templates, or minimalism</li>
             </ul>
