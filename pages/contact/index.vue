@@ -16,7 +16,6 @@
         <p>You can also email me directly at <a href="mailto:jessegoodburne@gmail.com" class="text-green-400">jessegoodburne@gmail.com</a></p>
       </div>
       <form
-        @submit="(e) => e.preventDefault()"
         class="w-full md:w-1/2"
         name="contact"
         netlify
