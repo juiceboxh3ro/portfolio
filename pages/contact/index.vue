@@ -1,76 +1,57 @@
 <script setup lang="ts">
-  useSeoMeta({
-    title: "Jesse Goodburne | Contact",
-    ogTitle: "Jesse Goodburne | Contact",
-  })
-
-  const handleSubmit = (e: Event) => {
-    e.preventDefault()
-  }
+useSeoMeta({
+  title: "Jesse Goodburne | Contact",
+  ogTitle: "Jesse Goodburne | Contact",
+})
 </script>
 
 <template>
   <NuxtLayout>
-    <div class="flex flex-col items-center gap-12 p-4 text-lg">
-      <h2 class="text-4xl font-bold self-start">
-        <pre><span class="text-2xl text-green-400">04.</span> Contact</pre>
-      </h2>
-      <div class="w-full md:w-2/3 mx-auto">
-        <p>Please fill out the form below and I&apos;ll get back to you as soon as I can!</p>
-        <p>You can also email me directly at <a href="mailto:jessegoodburne@gmail.com" class="text-green-400">jessegoodburne@gmail.com</a></p>
+    <div class="flex flex-col justify-evenly p-4">
+      <div class="mb-12 lg:w-1/2">
+        <h2 class="text-4xl font-bold mb-12">
+          <pre><span class="text-2xl text-green-400">03.</span>&nbsp;Contact</pre>
+        </h2>
+        <div class="text-lg flex flex-col gap-4">
+          <p>I&apos;m generally open to various project types and scopes. Contact me at <a class="text-green-400" href="mailto:jesse.goodburne@gmail.com">jesse.goodburne@gmail.com</a> and we can discuss, for <strong>no fee</strong>, your project&apos;s needs to determine if we&apos;re a fit for each other!</p>
+          <p>Any projects with requirements not explicitly listed under the "Won&apos;t" section is tentatively a "Will", such as Shopify, WordPress, and Mobile / Desktop apps.</p>
+        </div>
       </div>
-      <form
-        @submit="handleSubmit"
-        class="w-full md:w-1/2"
-        name="contact"
-        data-netlify="true"
-      >
-        <fieldset class="border-2 border-green-400 p-4 rounded-lg">
-          <div class="pt-2 flex flex-col items-end">
-            <div class="w-full flex flex-col gap-4 -mt-2 text-zinc-900">
-              <input
-                name="name"
-                class="px-2 py-1 rounded-md focus:outline-green-700"
-                type="text"
-                placeholder="Name"
-                required="true"
-                autofocus="true"
-              />
-              <input
-                name="email"
-                class="px-2 py-1 rounded-md focus:outline-green-700"
-                type="email"
-                placeholder="Email"
-                autocomplete="off"
-                required="true"
-              />
-              <textarea
-                name="message"
-                class="px-2 py-1 rounded-md focus:outline-green-700"
-                type="text"
-                placeholder="Message"
-                required="true"
-              />
-            </div>
-            <button
-              type="submit"
-              class="text-xl font-bold text-zinc-900 bg-green-400 px-4 py-2 mt-4 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 focus:outline-green-700"
-            >
-              Submit
-            </button>
+      <div>
+        <div class="grid gap-4 md:gap-24 items-start sm:grid-flow-col">
+          <div class="flex flex-col justify-center gap-4">
+            <h3 class="text-2xl font-bold">What I Will Do</h3>
+            <ul>
+              <li>
+                <GreenTriangle />&nbsp;Website/Web App development using HTML, CSS, (Javascript/Django/Rails/Phoenix)
+              </li>
+              <li>
+                <GreenTriangle />&nbsp;Website from Static Site/Site builders
+              </li>
+              <li>
+                <GreenTriangle />&nbsp;Design for desktop and mobile browsers from references, wireframe, templates, or
+                minimalism
+              </li>
+            </ul>
           </div>
-        </fieldset>
-      </form>
-      <div class="w-full mx-auto md:w-2/3">
-        <aside class="font-bold">Notes:</aside>
-        <ul>
-          <li>
-            <GreenTriangle />&nbsp;A signed contract agreeing to payment terms, as well as anything within reason you request, will be required before work commences.
-          </li>
-          <li>
-            <GreenTriangle />&nbsp;Once a project has been completed the source code will also be handed off in either a zipfile or git repo. Site builders such as Squarespace and Wix are generally excluded from this, unless you request backups of copy or custom CSS/Javascript to be added.
-          </li>
-        </ul>
+          <div class="flex flex-col justify-center gap-4">
+            <h3 class="text-2xl font-bold">What I Won't Do</h3>
+            <ul>
+              <li>
+                <GreenTriangle />&nbsp;Works which harvest customer data for resale
+              </li>
+              <li>
+                <GreenTriangle />&nbsp;Anything involving Web3 (NFTs, Cryptocurrency, Blockchain)
+              </li>
+              <li>
+                <GreenTriangle />&nbsp;Email templates, logo, branding, original art assets, unguided app/website design
+              </li>
+              <li>
+                <GreenTriangle />&nbsp;Upgrades of pre-existing works with poor documentation or code quality
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </NuxtLayout>

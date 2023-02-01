@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  useSeoMeta({
-    title: "Jesse Goodburne | About",
-    ogTitle: "Jesse Goodburne | About",
-  })
+useSeoMeta({
+  title: "Jesse Goodburne | About",
+  ogTitle: "Jesse Goodburne | About",
+})
 
-  const langs = ["Nuxt", "Next.js", "Sveltekit", "Elixir & Phoenix", "Django", "Unreal Engine"]
+const langs = ["Nuxt", "Next.js", "Sveltekit", "Elixir & Phoenix", "Django", "Unreal Engine"]
 </script>
 
 <template>
@@ -16,7 +16,7 @@
       <div>
         <div class="grid gap-4 md:gap-24 items-start sm:grid-flow-col">
           <div class="flex flex-col justify-center gap-4">
-            <p>Hello! I&apos;m jesse. I was born in Northern Michigan, and shortly after moving to Maryland I was diagnosed with bone cancer. I&apos;m now over 10 years in remission!</p>
+            <p>Hello! I&apos;m jesse. I was grew up in Northern Michigan, and shortly after moving to Maryland I was diagnosed with bone cancer. I&apos;m now over 10 years in remission!</p>
             <p>I started self-teaching Japanese around 2011, and later went to Temple University, Japan Campus in Tokyo to major in Japanese language and culture.</p>
             <p>But how does that relate to web development you may ask? It probably doesn&apos;t! I've been interested in programming since I was young, but either never had the right resources to get started or the time to invest in learning. After graduation I had plenty of time and had found the right resources, and thus started my journey with HTML, CSS, and Javascript.</p>
           </div>

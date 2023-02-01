@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  useSeoMeta({
-    title: "Jesse Goodburne | Web Developer",
-    ogTitle: "Jesse Goodburne | Web Developer",
-  })
+useSeoMeta({
+  title: "Jesse Goodburne | Web Developer",
+  ogTitle: "Jesse Goodburne | Web Developer",
+})
 </script>
 
 <template>

@@ -5,6 +5,7 @@
 
 <template>
   <Navbar />
+  <NuxtLoadingIndicator />
   <NuxtPage />
   <SocialLinks />
 </template>
