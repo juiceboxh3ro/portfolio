@@ -1,12 +1,16 @@
 <script lang="ts" setup>
-  const links = [
-    { href: "/", text: "Top" },
-    { href: "/about", text: "About" },
-    { href: "/projects", text: "Projects" },
-    { href: "/contact", text: "Contact" }
-  ]
+const links = [
+  { href: "/", text: "Top" },
+  { href: "/about", text: "About" },
+  { href: "/projects", text: "Projects" },
+  { href: "/contact", text: "Contact" }
+]
 
-  const modalOpen = useState('modalOpen', () => false)
+const modalOpen = useModalOpen()
+const handleNavTo = (to: string) => {
+  modalOpen.value = false
+  return navigateTo(to)
+}
 </script>
 
 <template>
@@ -47,9 +51,9 @@
               <div class="space-y-2 py-6">
                 <ul class="flex flex-col gap-4">
                   <li v-for="({ href, text }, i) in links" :key="href" class="text-lg">
-                    <NuxtLink :to="href" class="focus:outline-green-300">
+                    <p role="link" @click="handleNavTo(href)" class="focus:outline-green-300">
                       <pre><span class="text-green-400">0{{ i }}.&nbsp;</span>{{ text }}</pre>
-                    </NuxtLink>
+                    </p>
                   </li>
                 </ul>
               </div>

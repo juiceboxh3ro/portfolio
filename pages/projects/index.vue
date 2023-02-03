@@ -65,47 +65,47 @@ const work_exp = [
   <NuxtLayout>
     <div class="text-lg flex flex-col pb-24">
       <template v-if="viewing === 'work'">
-        <h2 class="text-4xl font-bold">
-          <pre><span class="text-2xl text-green-400">02.</span> Work Experience</pre>
+        <h2 class="text-2xl font-bold sm:text-4xl">
+          <pre><span class="text-lg text-green-400 sm:text-2xl">02.</span> Work Experience</pre>
         </h2>
         <div>
           <button @click="viewing = 'projects'"
-            class="text-2xl font-bold text-zinc-900 bg-green-400 px-4 py-2 my-12 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 focus:outline-green-300">
+            class="text-base font-bold text-zinc-900 bg-green-400 px-4 py-2 my-6 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 sm:my-12 sm:text-2xl focus:outline-green-300">
             View Projects
           </button>
         </div>
         <div class="divide-y flex flex-col gap-8 divide-zinc-300 mx-auto">
           <div v-for="exp in work_exp" v-bind:key="exp.company">
             <div class="flex flex-col gap-2">
-              <h2 class="text-white text-2xl font-bold mt-8 mb-2">
+              <h2 class="text-white text-lg font-bold mt-8 mb-2 sm:text-2xl">
                 <a class="focus:outline-green-300" :href="exp.link" target="_blank" rel="noopener noreferrer">{{
                   exp.company
                 }}</a>
               </h2>
-              <p><span class="text-green-400">Role:</span>&nbsp;{{ exp.title }}</p>
-              <p><span class="text-green-400">Project Type:</span>&nbsp;{{ exp.type }}</p>
-              <p><span class="text-green-400">Tech Stack:</span>&nbsp;{{ exp.techs }}</p>
-              <p><span class="text-green-400">Started:</span>&nbsp;{{ exp.started }}</p>
-              <p><span class="text-green-400">Ended:</span>&nbsp;{{ exp.ended ? exp.ended : "Current" }}</p>
-              <p><span class="text-green-400">Description:</span>&nbsp;{{ exp.description }}</p>
+              <p class="text-sm sm:text-lg"><span class="text-green-400">Role:</span>&nbsp;{{ exp.title }}</p>
+              <p class="text-sm sm:text-lg"><span class="text-green-400">Project Type:</span>&nbsp;{{ exp.type }}</p>
+              <p class="text-sm sm:text-lg"><span class="text-green-400">Tech Stack:</span>&nbsp;{{ exp.techs }}</p>
+              <p class="text-sm sm:text-lg"><span class="text-green-400">Started:</span>&nbsp;{{ exp.started }}</p>
+              <p class="text-sm sm:text-lg"><span class="text-green-400">Ended:</span>&nbsp;{{ exp.ended ? exp.ended : "Current" }}</p>
+              <p class="text-sm sm:text-lg"><span class="text-green-400">Description:</span>&nbsp;{{ exp.description }}</p>
             </div>
           </div>
         </div>
       </template>
       <template v-else-if="viewing === 'projects'">
-        <h2 class="text-4xl font-bold">
-          <pre><span class="text-2xl text-green-400">02.</span> Personal Projects</pre>
+        <h2 class="text-2xl font-bold sm:text-4xl">
+          <pre><span class="text-lg text-green-400 sm:text-2xl">02.</span> Personal Projects</pre>
         </h2>
         <div>
           <button @click="viewing = 'work'"
-            class="text-2xl font-bold text-zinc-900 bg-green-400 px-4 py-2 my-12 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 focus:outline-green-300">
+            class="text-base font-bold text-zinc-900 bg-green-400 px-4 py-2 my-6 rounded-md drop-shadow-md border-green-700 border-2 border-b-4 sm:my-12 sm:text-2xl focus:outline-green-300">
             View Work Experience
           </button>
         </div>
         <div class="divide-y flex flex-col gap-8 divide-zinc-300 mx-auto">
           <div v-for="p in projects" v-bind:key="p.name">
             <div class="flex flex-col gap-2">
-              <h2 class="text-white text-2xl font-bold mt-8 mb-2">
+              <h2 class="text-white text-lg font-bold mt-8 mb-2 sm:text-2xl">
                 <a class="focus:outline-green-300" :href="p.link" target="_blank" rel="noopener noreferrer">{{
                   p.name
                 }}</a>
