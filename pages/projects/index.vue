@@ -78,7 +78,7 @@ const work_exp = [
           <div v-for="exp in work_exp" v-bind:key="exp.company">
             <div class="flex flex-col gap-2">
               <h2 class="text-white text-lg font-bold mt-8 mb-2 sm:text-2xl">
-                <a class="focus:outline-green-300" :href="exp.link" target="_blank" rel="noopener noreferrer">{{
+                <a class="text-sm sm:text-lg focus:outline-green-300" :href="exp.link" target="_blank" rel="noopener noreferrer">{{
                   exp.company
                 }}</a>
               </h2>
@@ -106,12 +106,12 @@ const work_exp = [
           <div v-for="p in projects" v-bind:key="p.name">
             <div class="flex flex-col gap-2">
               <h2 class="text-white text-lg font-bold mt-8 mb-2 sm:text-2xl">
-                <a class="focus:outline-green-300" :href="p.link" target="_blank" rel="noopener noreferrer">{{
+                <a class="text-sm sm:text-lg focus:outline-green-300" :href="p.link" target="_blank" rel="noopener noreferrer">{{
                   p.name
                 }}</a>
               </h2>
-              <p><span class="text-green-400">Tech Stack:</span>&nbsp;{{ p.techs }}</p>
-              <p><span class="text-green-400">Description:</span>&nbsp;{{ p.description }}</p>
+              <p class="text-sm sm:text-lg"><span class="text-green-400">Tech Stack:</span>&nbsp;{{ p.techs }}</p>
+              <p class="text-sm sm:text-lg"><span class="text-green-400">Description:</span>&nbsp;{{ p.description }}</p>
             </div>
           </div>
         </div>
