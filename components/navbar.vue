@@ -16,12 +16,18 @@ const handleNavTo = (to: string) => {
 <template>
   <header class="isolate sticky top-0 left-0 right-0 z-50 p-4 bg-zinc-800 shadow-lg">
     <nav>
-      <div class="hidden lg:flex lg:justify-end items-center">
+      <div class="hidden sm:flex sm:justify-end sm:items-center">
         <pre class="inline-flex text-xl pr-4">[</pre>
         <ul class="flex flex-row gap-4">
           <li v-for="({ href, text }, i) in links" :key="href" class="text-lg">
             <span class="inline-flex items-center">
-              <NuxtLink :to="href" :key="i" class="focus:outline-green-300">
+              <NuxtLink
+                :to="href"
+                :key="i"
+                :prefetch="true"
+                :rel="'canonical'"
+                class="focus:outline-green-300"
+              >
                 <pre>{{ text }}</pre>
               </NuxtLink>
               <pre v-if="i !== links.length - 1">,</pre>
@@ -33,7 +39,7 @@ const handleNavTo = (to: string) => {
 
       <template v-if="modalOpen">
         <div aria-modal="true">
-        <div class="fixed inset-0 overflow-y-auto bg-zinc-800 px-6 py-6 lg:hidden">
+        <div class="fixed inset-0 overflow-y-auto bg-zinc-800 px-6 py-6 sm:hidden">
           <div class="flex items-center justify-end">
             <button
               type="button"
@@ -51,9 +57,13 @@ const handleNavTo = (to: string) => {
               <div class="space-y-2 py-6">
                 <ul class="flex flex-col gap-4">
                   <li v-for="({ href, text }, i) in links" :key="href" class="text-lg">
-                    <p role="link" @click="handleNavTo(href)" class="focus:outline-green-300">
+                    <button
+                      tabindex="0"
+                      @click="handleNavTo(href)"
+                      class="focus:outline-green-300"
+                    >
                       <pre><span class="text-green-400">0{{ i }}.&nbsp;</span>{{ text }}</pre>
-                    </p>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -63,7 +73,7 @@ const handleNavTo = (to: string) => {
         </div>
       </template>
       <template v-else>
-        <div class="flex justify-end lg:hidden">
+        <div class="flex justify-end sm:hidden">
           <button
             type="button"
             class="inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"

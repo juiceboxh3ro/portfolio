@@ -1,5 +1,11 @@
 {
+  "name": "my-portfolio-website",
+  "version": "0.1.1",
   "private": true,
+  "author": {
+    "name": "jesse goodburne",
+    "email": "jessegoodburne@gmail.com"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
